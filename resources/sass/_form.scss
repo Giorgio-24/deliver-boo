@@ -1,0 +1,20 @@
+/*--------------------
+SHARED VARIABLES
+--------------------*/
+
+/*--------------------
+GENERAL
+--------------------*/
+
+//^FORM PERSONALIZZATO
+#card-number,
+#cvv,
+#expiration-date {
+  background-color: #fff;
+
+  height: 38px;
+  border: 1px solid #ced4da;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+}
+

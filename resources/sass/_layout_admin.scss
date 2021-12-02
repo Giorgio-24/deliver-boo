@@ -1,0 +1,30 @@
+.admin-bck {
+    min-height: 100vh;
+
+    // background: url("/images/bg-admin.jpg");
+    // background-position:center top;
+    // background-size:25% 75% ;
+    // background-repeat:no-repeat ;
+      background-image: -webkit-linear-gradient(
+        left top,
+        rgb(28 26 26 / 59%),
+        rgb(244 67 54 / 53%)
+    ); /* Chrome 10+, Saf5.1+ */
+
+    // background: url("/images/bck_admin.jpg");
+}
+.navbar-brand {
+    padding: 0;
+}
+
+#admin-nav {
+    .navbar {
+        background-color: transparent;
+        a {
+            color: $primary-color;
+        }
+    }
+}
+.bg-statistics-graph {
+    background-color: #fefefed4;
+}

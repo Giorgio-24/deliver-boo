@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Dancing+Script:wght@700&display=swap");
+// Accedi e Registrati
+#guest-nav {
+    .navbar {
+        background-color: transparent;
+        .nav-link {
+            font-size: 22px;
+            font-weight: 700;
+        }
+        a {
+            color: $primary-color;
+            padding: 0;
+            margin-right: 10px;
+        }
+    }
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    padding: 0px;
+    margin: 0;
+}
+#guest-home-blade {
+    .search-restaurant {
+        top: -20px;
+        .text-search {
+            color: $primary-color;
+        }
+        input[placeholder] {
+            color: $primary-color;
+        }
+        ::-webkit-input-placeholder {
+            /* WebKit browsers (Safari, Google Chrome, Opera 15+) */
+            color: $primary-color;
+        }
+        :-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: $primary-color;
+            opacity: 1;
+        }
+        ::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: $primary-color;
+            opacity: 1;
+        }
+        :-ms-input-placeholder {
+            /* Internet Explorer 10+ */
+            color: $primary-color;
+        }
+        select,
+        input {
+            border: 0;
+        }
+        .btn-search {
+            border: 1px solid white;
+            .fa-search {
+                color: white;
+            }
+        }
+        select {
+            background-color: $primary-color;
+            color: white;
+            border: 1px solid white;
+            &:hover {
+                color: $primary-color;
+                border: 1px solid $primary-color;
+            }
+            option {
+                background-color: white;
+            }
+        }
+    }
+
+    #restaurants {
+        h2 {
+            margin-top: 30px;
+            font-family: "Lato", serif;
+            font-size: 50px;
+        }
+    }
+    // Arrow card
+    .arrow-product {
+        color: $primary-color;
+        font-size: 25px;
+        &:hover {
+            color: black;
+        }
+    }
+
+    // Card
+    /* SOLO LE CARTE NELL'HOME PAGE */
+    #restaurants .card:hover {
+        transform: scale(1.01);
+    }
+
+    .card {
+        margin: 10px;
+        cursor: pointer;
+        border: 2px solid $primary-color;
+       
+    }
+    .card-body {
+        // padding: 30px;
+        text-align: left;
+        .name {
+            color: $primary-color;
+            font-weight: bold;
+        }
+      
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    #guest-nav {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+
+        width: 100%;
+    }
+
+    #restaurant {
+        #cart-section {
+            position: fixed;
+        }
+    }
+}
+#scroll-button {
+    a {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    #scroll-button {
+        a {
+            display: block;
+        }
+    }
+    .input-group {
+        flex-direction: column;
+        top: 18px;
+
+        .text-search {
+            width: 100%;
+        }
+        .input-group-append {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+    #restaurants {
+        h2 {
+            font-size: 28px;
+        }
+    }
+}
